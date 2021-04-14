@@ -82,7 +82,7 @@ class GbBlogParser:
                 "id": post_id,
                 "image_url": soup.find("meta", {"property": "og:image"}).attrs.get("content", ""),
                 "published_at": datetime.fromisoformat(
-                    soup.find("meta", {"name": "mediator_published_time"}).attrs.get("content", "")
+                    soup.find("time", {"itemprop": "datePublished"}).attrs.get("datetime", "")
                 ),
             },
             "author": {
