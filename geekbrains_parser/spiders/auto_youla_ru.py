@@ -3,9 +3,12 @@ import base64
 import scrapy
 import re
 
+from urllib.parse import urljoin
+
 
 class AutoYoulaRuSpider(scrapy.Spider):
     name = "auto_youla_ru"
+    base_url = "https://youla.ru"
     allowed_domains = ["auto.youla.ru"]
     start_urls = ["https://auto.youla.ru/"]
 
@@ -85,7 +88,8 @@ class AutoYoulaRuSpider(scrapy.Spider):
                 response.css("div.AdvertCard_price__3dDCr::text").get().replace("\u2009", "")
             ),
             "author": {
-                "url": response.urljoin(f"/user/{contact_data.get('site_id')}"),
+                # todo: add support of making url for car sealer
+                "url": urljoin(self.base_url, f"/user/{contact_data.get('site_id')}"),
                 "phone": contact_data["phone"],
             },
         }
