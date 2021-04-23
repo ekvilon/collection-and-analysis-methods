@@ -79,6 +79,7 @@ instance/
 .webassets-cache
 
 # Scrapy stuff:
+images/
 .scrapy
 
 # Sphinx documentation
