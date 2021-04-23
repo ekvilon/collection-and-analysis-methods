@@ -6,7 +6,7 @@
 import scrapy
 
 
-class GeekbrainsParserItem(scrapy.Item):
+class AutoYoulaParserItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass

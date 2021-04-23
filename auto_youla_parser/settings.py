@@ -1,4 +1,4 @@
-# Scrapy settings for geekbrains_parser project
+# Scrapy settings for auto_youla_parser project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -7,10 +7,10 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "geekbrains_parser"
+BOT_NAME = "auto_youla_parser"
 
-SPIDER_MODULES = ["geekbrains_parser.spiders"]
-NEWSPIDER_MODULE = "geekbrains_parser.spiders"
+SPIDER_MODULES = ["auto_youla_parser.spiders"]
+NEWSPIDER_MODULE = "auto_youla_parser.spiders"
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
@@ -45,13 +45,13 @@ DEFAULT_REQUEST_HEADERS = {
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 # SPIDER_MIDDLEWARES = {
-#    'geekbrains_parser.middlewares.GeekbrainsParserSpiderMiddleware': 543,
+#    'auto_youla_parser.middlewares.AutoYoulaParserSpiderMiddleware': 543,
 # }
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 # DOWNLOADER_MIDDLEWARES = {
-#    'geekbrains_parser.middlewares.GeekbrainsParserDownloaderMiddleware': 543,
+#    'auto_youla_parser.middlewares.AutoYoulaParserDownloaderMiddleware': 543,
 # }
 
 # Enable or disable extensions
@@ -63,7 +63,7 @@ DEFAULT_REQUEST_HEADERS = {
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 # ITEM_PIPELINES = {
-#    'geekbrains_parser.pipelines.GeekbrainsParserPipeline': 300,
+#    'auto_youla_parser.pipelines.AutoYoulaParserPipeline': 300,
 # }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
