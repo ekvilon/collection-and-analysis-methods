@@ -3,9 +3,6 @@ from datetime import datetime
 import aiohttp
 import asyncio
 from bs4 import BeautifulSoup
-from bs4.element import Tag
-from requests import get as fetch_page
-from time import sleep
 from urllib.parse import urlparse, urlunparse, urljoin
 
 from database.database import Database
