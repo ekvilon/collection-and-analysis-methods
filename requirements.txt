@@ -1,0 +1,4 @@
+SQLAlchemy==1.4.7
+aiohttp==3.7.4.post0
+beautifulsoup4==4.9.3
+pre-commit==2.11.1
