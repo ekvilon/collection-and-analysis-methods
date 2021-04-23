@@ -3,7 +3,6 @@
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 from itertools import cycle
-from scrapy.downloadermiddlewares import retry
 
 
 class AvitoParserSpiderRotatingUserAgentsMiddleware:
