@@ -50,7 +50,7 @@ class HhVacanciesSpider(scrapy.Spider):
 
     def parse(self, response, *args, **kwargs):
         yield from self.parse_vacancies(response)
-        # yield from self._follow_pagination(response, self.parse_vacancies)
+        yield from self._follow_pagination(response, self.parse_vacancies)
 
     def parse_vacancies(self, response, *args, **kwargs):
         yield from self._follow_links(response, self._xpath_vacancy_selector, self.parse_vacancy)
