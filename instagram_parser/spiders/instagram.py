@@ -4,8 +4,8 @@ import json
 from scrapy.http import JsonRequest
 
 from instagram_parser.loaders import InstagramTagLoader, InstagramPostLoader
-from instagram_parser.spiders.lib.paginator import InstagramTagPaginator
-from instagram_parser.spiders.lib.utils import get_cookies
+from instagram_parser.spiders.libs.paginator import InstagramTagPaginator
+from instagram_parser.spiders.libs.utils import get_cookies
 
 
 class InstagramSpider(scrapy.Spider):
