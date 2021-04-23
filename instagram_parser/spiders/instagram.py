@@ -63,8 +63,7 @@ class InstagramSpider(scrapy.Spider):
         if end_cursor:
             yield JsonRequest(
                 url=response.urljoin(
-                    f"/graphql/query/?"
-                    f"{tag_paginator.get_query(first=next(tag_paginator.page), end_cursor=end_cursor)}"
+                    f"/graphql/query/?" f"{tag_paginator.get_query(end_cursor=end_cursor)}"
                 ),
                 callback=self.parse_posts,
                 cb_kwargs={"tag_paginator": tag_paginator},
